@@ -1,0 +1,68 @@
+body {
+  background-color: #edeff5;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-div {
+  text-align: center;
+  vertical-align: middle;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.login-form {
+  padding-top: 30px;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: initial;
+  text-align: -webkit-center;
+  color: rgb(0, 0, 34);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-button {
+  margin-top: 20px !important;
+  width: 300px;
+}
+
+.MuiFormControl-root {
+  margin: 10px !important;
+  width: 300px;
+}
+
+.logo-img {
+  width: 200px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.login-text {
+  font-size: 12px !important;
+}
+
+.pointer {
+  cursor: pointer;
+  color: #00708b;
+}

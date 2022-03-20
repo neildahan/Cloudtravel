@@ -1,0 +1,18 @@
+.chart {
+  width: 1000px;
+  margin-top: 20vh;
+  margin-left: 30vw;
+}
+.reports {
+  text-align: -webkit-center;
+  height: 100vh;
+  text-align: -webkit-center;
+  background-image: url("bg1.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+

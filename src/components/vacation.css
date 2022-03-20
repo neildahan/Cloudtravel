@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Nosifer&display=swap");
+
+.vac-img {
+  width: 350px;
+  border-radius: 0px 0px 0px 0px;
+  height: 300px;
+}
+
+.vac-div {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 0px;
+  box-shadow: rgba(148, 124, 124, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 30px 10px;
+  height: 640px;
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #3f51b5;
+  margin-bottom: 20px !important;
+}
+
+.bottom-card {
+  padding: 0 20px;
+}
+
+.fav {
+  position: absolute;
+}
+
+.MuiIconButton-label {
+  justify-content: end !important;
+}
+
+.vac-list {
+  padding: 20px 40px 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 0 100px;
+}
+
+.logo-header {
+  width: 150px;
+  padding: 10px;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: rgba(112, 112, 112, 0.16) 0px 3px 6px,
+    rgba(218, 218, 218, 0.23) 0px 3px 6px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100px;
+  display: flex;
+}
+
+p {
+  font-size: 14px;
+}
+
+.MuiSvgIcon-root {
+  fill: #21499c !important;
+}
+
+.fav-headline {
+  text-align: left;
+  font-size: 24px;
+  padding-top: 50px;
+  margin: 0px 100px;
+  color: rgb(26, 26, 26);
+}
+
+hr {
+  border: 1px solid rgb(60, 0, 170);
+  width: 80vw;
+}
+
+.ForwardRef-root-1 {
+  height: 60px;
+  width: 1000px;
+}
+.ForwardRef-root-5 {
+  width: 1000px;
+}
+
+.search {
+  padding-top: 10vh;
+  padding-bottom: 100px;
+  text-align: -webkit-center;
+  background-image: url("https://www.vacationclubloans.com/wp-content/uploads/2014/04/bg-body.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-headline {
+  font-size: 80px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: whitesmoke;
+  text-shadow: 7px 2px #29357d;
+}
+
+.des-title {
+  color: #21499c;
+}
+
+.prim-button {
+  margin-top: 20px !important;
+  height: 50px;
+  width: 300px;
+}
+
+.price {
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+}
+
+.date-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.description {
+  min-height: 100px;
+}
+
+.admin-menu {
+  display: flex;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+}
+
+.edit-button {
+  height: 10px !important;
+  font-size: 8px !important;
+  background-color: #303f9f !important;
+  color: white !important;
+  height: 20px !important;
+}
+
+.addBtn,
+.admin-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.report-button {
+  margin-right: 20px !important;
+}
+
+.link {
+  margin: 20px;
+  color: #303f9f;
+  font-weight: 700;
+}
+
+.logout {
+  position: fixed;
+  right: 5vw;
+  top: 4vh;
+}
+
+.addButton {
+  width: 150px!important;
+  font-size: 12px!important;
+  padding: 8px!important;
+  margin-bottom: 0!important;
+}
+
+.spinner{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
