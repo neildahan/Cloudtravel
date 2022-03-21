@@ -1,0 +1,43 @@
+create database travel;
+use travel;
+
+create table users(
+id int auto_increment,
+firstName varchar(255),
+lastName varchar(255),
+username varchar(255),
+password varchar(255),
+role varchar(255) default "user",
+primary key (id)
+);
+
+create table vacations(
+id int auto_increment,
+destination varchar(255),
+imgUrl text,
+description text,
+fromDate DATE NOT NULL,
+toDate DATE NOT NULL,
+price int,
+followers int default 0,
+primary key(id)
+);
+
+create table favtable(
+userID int,
+vacationId int,
+id int auto_increment,
+primary key(id),
+foreign key(userID) references users(id),
+foreign key(vacationId)references vacations(id)
+);
+
+
+insert into users(firstName,lastName,username,password,role)
+values('Mark','Cohen','admin',12345,'admin'),('John','Levy','john',12345,'user'),('Marry','Dan','marry',12345,'user');
+
+insert into vacations(destination,imgUrl,description,fromDate,toDate,price,followers)
+values('London','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/LONDON.jpg','London is the capital city of the United Kingdom. It is the U.K.s largest metropolis and its economic, transportation, and cultural centre. London is also among the oldest of the worlds great cities, with its history spanning nearly two millennia.','2021-12-03','2021-12-10',799,15),
+('Dubai','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/Dubai.jpg','Dubai is a city of skyscrapers, ports, and beaches, where big business takes place alongside sun-seeking tourism. Because of its large expatriate population, it feels like a Middle Eastern melting pot, and the atmosphere is generally tolerant.','2021-12-03','2021-12-15',899,22),
+('Tel Aviv','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/TLV.jpg','Tel Aviv is Israels cultural and commercial capital. Named The Mediterranean Capital of Cool by the New York Times, Tel Aviv is a city with a savvy attitude and cultural astuteness.','2021-12-13','2021-12-20',399,28),
+('Budapest','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/bodapest.jpg','Budapest, city, capital of Hungary, and seat of Pest megye (county). The city is the political, administrative, industrial, and commercial centre of Hungary.','2021-12-22','2021-12-28',499,12),('Athens','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/athens.jpg','Athens is the capital of Greece. It was also at the heart of Ancient Greece, a powerful civilization and empire. The city is still dominated by 5th-century BC landmarks, including the Acropolis.','2021-12-21','2021-12-23',599,23),('Morocco','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/MOROCCO.jpg','Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences.','2021-12-18','2021-12-28',999,32),('Eilat','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/Eilat.jpg','Eilat is a southern Israeli port and resort town on the Red Sea, near Jordan. Its beaches are noted for their calm waters, like Dolphin Reef, where the aquatic mammals are often spotted.','2021-12-25','2021-12-30',899,18),('Milan','https://ipro.website/cloudtravel/wp-content/uploads/2021/11/Milan.jpg','Milan a metropolis in Italys northern Lombardy region, is a global capital of fashion and design. Home to the national stock exchange, its a financial hub also known for its high-end restaurants and shops.','2021-12-24','2021-12-27',699,20);
